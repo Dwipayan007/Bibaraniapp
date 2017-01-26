@@ -1,0 +1,19 @@
+﻿@import "_variables.scss";
+@import"_fonts.scss";
+
+@mixin headerClass{
+    font-size:$font-header;
+    font-family:$font-stack;
+    color:$primary-color;
+}
+
+@mixin navLogo($fsize:$font-navlogo,$fcolor:$navlogo-color){
+    font-family:$font-stack;
+    color:$fcolor;
+    font-size:$fsize;
+}
+
+@mixin navBar($ncolor:$sky-black,$nsize:$font-primary){
+    font-size:$nsize;
+    color:$ncolor;
+}

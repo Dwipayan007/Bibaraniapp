@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="bibarani">
+
+    <title>Bibarani</title>
+    <base href="/" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap.js"></script>
+    <script src="assets/plugins/jquery.countdown.js"></script>
+    <script src="assets/js/countdown.js"></script>
+	 <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <link href="SASS/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--<div class="loader"></div>-->
+        <div class="row">
+		      <my-app>Loading AppComponent content here ...</my-app>          
+          <home-data></home-data>
+        </div>
+    </div>
+  </body>
+</html>

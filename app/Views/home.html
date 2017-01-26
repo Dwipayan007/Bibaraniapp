@@ -1,0 +1,16 @@
+ <div class="container">
+   <carosuel></carosuel>
+ <div class="row">
+   <button (click)="getData();">Get Data</button>
+ <h2>Dogs</h2>
+    <p>List of dogs</p>
+    <ul class="demo-list-icon mdl-list">
+      <li class="mdl-list__item" *ngFor="let name of mydata | async">
+            <a> <i class="material-icons mdl-list__item-icon">{{name.userId}}</i>
+            <i class="material-icons mdl-list__item-icon">{{name.title}}</i></a>
+            <button (click)="findById(name.id);">Get Detail</button>
+      </li>
+    </ul>
+ </div>
+ </div>
+ 

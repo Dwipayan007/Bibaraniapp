@@ -1,0 +1,48 @@
+﻿@import "_mixins.scss";
+@import "_headers.scss";
+
+.navlogo {
+    @include navLogo;
+
+    &:hover, &:focus {
+        color: $blue-grey;
+        text-decoration: none;
+    }
+    /*&:visited{
+        color:$secondary-color;
+    }*/
+}
+
+/*ul {
+    .nav {
+        .navbar-nav {
+            .navbar-right {
+                .navbar-style {
+                    li {
+                        @include navBar;
+                        opacity: .7;
+                        display: block;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+
+ul.nav.navbar-nav.navbar-right .navbar-style {
+    @include navBar;
+    opacity: .7;
+    display: block;
+   
+    a{
+        color:$secondary-color !important;
+    }
+     &:hover {
+        opacity: 1;
+        color:$blue-grey !important;
+    }
+}

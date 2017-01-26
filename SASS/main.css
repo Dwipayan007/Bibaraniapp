@@ -1,0 +1,41 @@
+﻿.navlogo {
+  font-family: Helvetica, sans-serif;
+  color: #dbe983;
+  font-size: 30px;
+  /*&:visited{
+        color:$secondary-color;
+    }*/ }
+  .navlogo:hover, .navlogo:focus {
+    color: #0094ff;
+    text-decoration: none; }
+
+/*ul {
+    .nav {
+        .navbar-nav {
+            .navbar-right {
+                .navbar-style {
+                    li {
+                        @include navBar;
+                        opacity: .7;
+                        display: block;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+ul.nav.navbar-nav.navbar-right .navbar-style {
+  font-size: 16px;
+  color: #0e4345;
+  opacity: .7;
+  display: block; }
+  ul.nav.navbar-nav.navbar-right .navbar-style a {
+    color: #00ffff !important; }
+  ul.nav.navbar-nav.navbar-right .navbar-style:hover {
+    opacity: 1;
+    color: #0094ff !important; }
+
